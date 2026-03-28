@@ -46,8 +46,8 @@ elif [[ $KSU_ENABLED == "true" ]]; then
 
 	if [[ $KSU_MANAGER == "true" ]]; then
 	    cd $WORKDIR/out/manager && wget -q https://nightly.link/tiann/KernelSU/workflows/build-manager/main/ksud-x86_64-unknown-linux-musl.zip
-	    unzip ksud-x86_64-unknown-linux-musl.zip && mv x86_64-unknown-linux-musl/release/* .
-	    rm -rf ksud-x86_64-unknown-linux-musl.zip x86_64-unknown-linux-musl
+	    unzip ksud-x86_64-unknown-linux-musl.zip
+	    rm -rf ksud-x86_64-unknown-linux-musl.zip ksud.d
 	    mv *.apk manager.apk && chmod +x ksud
 	    MANAGER_SIGNATURE=$(./ksud get-sign manager.apk)
 	    MANAGER_EXPECTED_SIZE=$(echo "$MANAGER_SIGNATURE" | grep 'size:' | sed 's/.*size: //; s/,.*//')
