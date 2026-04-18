@@ -4,13 +4,14 @@
 # ------------------------------------------------------------
 
 # Kernel
-KERNEL_NAME="Perf"
+KERNEL_NAME="Perf-KSU-A14"
 KERNEL_GIT="https://github.com/selfmusing/kernel_xiaomi_violet.git"
-KERNEL_BRANCH="14"
+KERNEL_BRANCH="main"
+ANDROID_VERSION="14"
 
 # KernelSU
 KERNELSU_REPO="tiann/KernelSU"
-KSU_ENABLED="false"
+KSU_ENABLED="true"
 
 # Anykernel3
 ANYKERNEL3_GIT="https://github.com/selfmusing/AnyKernel3.git"
@@ -18,7 +19,7 @@ ANYKERNEL3_BRANCH="master"
 
 # Build
 DEVICE_CODE="violet"
-DEVICE_DEFCONFIG="vendor/violet-perf_deconfig"
+DEVICE_DEFCONFIG="vendor/violet-perf_defconfig"
 COMMON_DEFCONFIG=""
 DEVICE_ARCH="arch/arm64"
 
