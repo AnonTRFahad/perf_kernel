@@ -5,7 +5,7 @@
 
 # Kernel
 KERNEL_NAME="Perf-KSU-A14"
-KERNEL_GIT="https://github.com/selfmusing/kernel_xiaomi_violet.git"
+KERNEL_GIT="https://github.com/AnonTRFahad/kernel_xiaomi_violet.git"
 KERNEL_BRANCH="main"
 ANDROID_VERSION="14"
 
